@@ -13,7 +13,7 @@ function App() {
     const fetchWeather = async () => {
         try {
             setButtonColor('green');
-            const response = await axios.get(`http://localhost:3300/weather/${city}`);
+            const response = await axios.get(`https://ahmed-hesham-weatherpp.onrender.com/weather/${city}`);
             const weatherInfo = response.data.result;
             setWeatherData(weatherInfo);
             setError('');
